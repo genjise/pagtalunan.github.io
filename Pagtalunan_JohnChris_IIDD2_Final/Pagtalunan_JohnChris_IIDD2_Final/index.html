@@ -21,6 +21,9 @@
   <symbol id="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></symbol>
   <symbol id="gh" viewBox="0 0 24 24"><path class="f" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></symbol>
   <symbol id="in" viewBox="0 0 24 24"><path class="f" d="M4 9h3v11H4zM5.5 4a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zM10 9h3v1.6c.6-1 1.7-1.8 3.4-1.8 3 0 3.6 2 3.6 4.5V20h-3v-5.8c0-1.4 0-2.8-1.8-2.8s-2 1.3-2 2.7V20h-3z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></symbol>
 </defs></svg>
 <a class="skip" href="#main">Skip to content</a>
 
@@ -33,11 +36,11 @@
       <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><svg class="i"><use href="#gh"/></svg></a>
       <a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a>
       <a href="mailto:johnchrispagtalunan@gmail.com" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
-      <button type="button" id="theme" aria-label="Toggle dark mode" aria-pressed="false"><svg class="i"><use href="#moon"/></svg></button>
+      <button type="button" class="tt" aria-label="Toggle dark mode" aria-pressed="false"><svg class="i"><use href="#moon"/></svg></button>
     </div>
   </div>
   <nav aria-label="Main">
-    <a href="#top" aria-current="true"><svg class="i"><use href="#home"/></svg>Home</a>
+    <a href="#home-top" aria-current="true"><svg class="i"><use href="#home"/></svg>Home</a>
     <a href="#projects"><svg class="i"><use href="#folder"/></svg>Projects</a>
     <a href="#skills"><svg class="i"><use href="#layers"/></svg>Skills</a>
     <a href="#experience"><svg class="i"><use href="#award"/></svg>Experience</a>
@@ -52,7 +55,12 @@
 </aside>
 
 <main id="main">
-  <header class="head">
+  <div class="mtop">
+    <img src="assets/img/profile.jpg" width="900" height="1123" alt="John Chris Pagtalunan">
+    <div><p class="mn">John Chris R. Pagtalunan</p><p class="mh">UI/UX &amp; Front-End Intern</p></div>
+    <button type="button" class="tt" aria-label="Toggle dark mode" aria-pressed="false"><svg class="i"><use href="#moon"/></svg></button>
+  </div>
+  <header class="head" id="home-top">
     <div>
       <h1>Junior UI/UX &amp; Front-End Web Developer Intern.</h1>
       <p class="sub">I design clear interfaces in Figma and build them for the web. Open for OJT.</p>
@@ -69,12 +77,29 @@
     </div>
   </header>
 
+  <!-- TODO: replace the bracketed values -->
+  <dl class="stats">
+    <div><svg class="i"><use href="#clock"/></svg><dt>Target hours</dt><dd>[hrs]</dd></div>
+    <div><svg class="i"><use href="#cal"/></svg><dt>Available from</dt><dd>[term]</dd></div>
+    <div><svg class="i"><use href="#cap"/></svg><dt>Graduation</dt><dd>[year]</dd></div>
+  </dl>
+
   <section class="strip" aria-label="Tools I work with">
     <h2>Tools I work with</h2>
     <div class="marquee"><ul class="track">
       <li><i>F</i>Figma</li><li><i>C</i>Claude</li><li><i>V</i>VS Code</li><li><i>G</i>GitHub</li><li><i>Cv</i>Canva</li><li><i>Ps</i>Photoshop</li>
       <li class="dup" aria-hidden="true"><i>F</i>Figma</li><li class="dup" aria-hidden="true"><i>C</i>Claude</li><li class="dup" aria-hidden="true"><i>V</i>VS Code</li><li class="dup" aria-hidden="true"><i>G</i>GitHub</li><li class="dup" aria-hidden="true"><i>Cv</i>Canva</li><li class="dup" aria-hidden="true"><i>Ps</i>Photoshop</li>
     </ul></div>
+  </section>
+
+  <section class="explore" aria-labelledby="h-explore">
+    <h2 id="h-explore">Explore</h2>
+    <div class="cards">
+      <a href="#projects"><div class="vis"><img src="assets/img/projects/project1.jpg" alt="" loading="lazy"></div><h3>Projects</h3><p>Two UI/UX case studies with screenshots.</p></a>
+      <a href="#skills"><div class="vis"><svg class="i"><use href="#layers"/></svg></div><h3>Skills</h3><p>Front-end, design tools and foundations.</p></a>
+      <a href="#experience"><div class="vis"><svg class="i"><use href="#award"/></svg></div><h3>Experience</h3><p>Leadership roles and certificates.</p></a>
+      <a href="#about"><div class="vis"><svg class="i"><use href="#user"/></svg></div><h3>About</h3><p>Background and core competencies.</p></a>
+    </div>
   </section>
 
   <div class="panel">
@@ -144,6 +169,13 @@
     </section>
   </div>
 </main>
+<nav class="tabs" aria-label="Mobile">
+  <a href="#home-top" aria-current="true"><svg class="i"><use href="#home"/></svg>Home</a>
+  <a href="#projects"><svg class="i"><use href="#folder"/></svg>Work</a>
+  <a class="fab" href="#contact" aria-label="Contact / Inquire"><svg class="i"><use href="#mail"/></svg></a>
+  <a href="#skills"><svg class="i"><use href="#layers"/></svg>Skills</a>
+  <a href="#about"><svg class="i"><use href="#user"/></svg>About</a>
+</nav>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
