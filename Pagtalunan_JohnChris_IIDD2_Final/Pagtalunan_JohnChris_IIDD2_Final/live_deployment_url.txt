@@ -1,3 +1,0 @@
-Student Full Name: John Chris R. Pagtalunan
-GitHub Repository URL: https://github.com/YOUR-USERNAME/ojt-portfolio
-Live Deployment URL: https://YOUR-USERNAME.github.io/ojt-portfolio/
